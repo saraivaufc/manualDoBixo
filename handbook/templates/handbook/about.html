@@ -1,0 +1,98 @@
+{% extends 'handbook/_base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "About" %}{% endblock %}
+
+{% block breadcrumb  %}
+	{{ block.super }}
+	<li>{% trans "About" %}</li>
+{% endblock  %}
+
+{% block content %}
+<div class="container-fluid">
+	<p class="lead">{% trans "Criado Por:" %}</p>
+	<div class="container-fluid">
+		<div class="col-md-3">
+			<center>
+				<figure>
+					<a href="/static/handbook/img/authors/ciano.jpg" class="boxer" title="Ciano Saraiva" data-gallery="gallery">
+					    <img class="img-responsive img-circle" src="/static/handbook/img/authors/ciano.jpg" alt="Thumbnail One" />
+					</a>
+					<figcaption>
+						<a href="https://www.facebook.com/ciano.saraiva" target="_black">
+							Ciano Saraiva
+						</a>
+						<label>{% trans "Information Systems Student" %}</label>
+					</figcaption>
+				</figure>
+			</center>
+		</div>
+		<div class="col-md-3">
+			<center>
+				<figure>
+					<a href="/static/handbook/img/authors/felipe.jpg" class="boxer" title="Felipe Pinho" data-gallery="gallery">
+					    <img class="img-responsive img-circle" src="/static/handbook/img/authors/felipe.jpg" alt="Thumbnail One" />
+					</a>
+					<figcaption>
+						<a href="https://www.facebook.com/felipe.pinho.503" target="_black">Felipe Pinho</a>
+						<label>{% trans "Information Systems Student" %}</label>
+					</figcaption>
+				</figure>
+			</center>
+		</div>
+		<div class="col-md-3">
+			<center>
+				<figure>
+					<a href="/static/handbook/img/authors/rafael.jpg" class="boxer" title="Rafael Braz" data-gallery="gallery">
+					    <img class="img-responsive img-circle" src="/static/handbook/img/authors/rafael.jpg" alt="Thumbnail One" />
+					</a>
+					<figcaption>
+						<a href="https://www.facebook.com/rafael.braga.9889" target="_black">Rafael Braga</a>
+						<label>{% trans "Information Systems Coordinator" %}</label>
+					</figcaption>
+				</figure>
+			</center>
+		</div>
+		<div class="col-md-3">
+			<center>
+				<figure>
+					<a href="/static/handbook/img/authors/ryanne.jpg" class="boxer" title="Ryanner Paz" data-gallery="gallery">
+					    <img class="img-responsive img-circle" src="/static/handbook/img/authors/ryanne.jpg" alt="Thumbnail One" />
+					</a>
+					<figcaption>
+						<a href="https://www.facebook.com/ryanne.paz.9" target="_black">Ryanne Paz</a>
+						<label>{% trans "Secretary of Campus" %}</label>
+					</figcaption
+				</figure>
+			</center>
+		</div>
+	</div>
+	<hr class="divider">
+	<div class="text-justify lead ">
+		<p>
+			Um guia prático para seus primeiros passos na Universidade Federal do Ceará. Com ele você terá acesso rápido aos regulamentos da instituição, descrições de professores e disciplinas, dicas de como conseguir moradia, entre várias outras informações indispensáveis a qualquer "bixo".
+		</p>
+		<p>
+			Nosso principal objetivo é permitir que você tenha acesso de forma rápida e prática às informações referentes à universidade. Para tanto, criamos essa ferramenta o mais simples possível, com uma linguagem totalmente informal e descontraída. Além disso, tentamos ao máximo repassar nossas experiências pessoais à você, porque afinal, todos nós também já fomos bixos. 
+		</p>
+		<p>
+			Este documento foi escrito por veteranos e profesores. Nosso principal objetivo é transformar nossas experiências práticas em dicas que podem melhorar o primeiro contato dos calouros com a universidade.
+		</p>
+		<p>
+			Não se preocupe, pois também já passamos por tudo isso. Sabemos que este é um período de muitos medos, novas descobertas e muita zuera. Então relaxe e tenha sempre em mente que estamos aqui para ajudá-lo!. 
+		</p>
+		<p>
+		Versão Android:
+			<center>
+				<figure>
+					<a href="/static/handbook/img/code.png" class="boxer" title="QrCode" data-gallery="gallery">
+					    <img class="img-responsive" src="/static/handbook/img/code.png" alt="Android" />
+					</a>
+				    <figcaption><a href="http://goo.gl/wU6Cji" target="_black">http://goo.gl/wU6Cji</a></figcaption>
+				</figure>
+			</center>
+		</p>
+	</div>
+</div>
+{% endblock %}

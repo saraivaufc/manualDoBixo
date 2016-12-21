@@ -1,0 +1,16 @@
+{% extends 'handbook/index.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{{ topic.get_title }}{% endblock %}
+
+{% block breadcrumb  %}
+{{ block.super }}
+<li>
+	<a href="{% url 'handbook:see_topic' topic_slug=topic.get_slug page=1 %}">
+		{{ topic.get_title|title }}
+	</a>
+</li>
+{% endblock  %}
+

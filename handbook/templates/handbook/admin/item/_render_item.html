@@ -1,0 +1,15 @@
+{% load i18n %}
+{% load humanize %}	
+<div class="bloger-grid-full">
+	<div class="blog-img">
+		<img src="{{ item.get_image.url }}" title="img6" />
+	</div>
+	<div class="bloger-content">
+		<h2 class="text-center">{{ item.get_title|title }}</h2>
+		
+		{{ item.get_description|safe|linebreaks }}
+		<ul>
+			<li><a href="#">{{ item.get_creation|naturaltime }}</a></li>
+		</ul>
+	</div>
+</div>

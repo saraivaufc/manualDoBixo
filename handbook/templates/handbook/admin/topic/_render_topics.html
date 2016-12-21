@@ -1,0 +1,25 @@
+{% load i18n %}
+<ol  id="list_topics_sort" class="list-group">
+	{%  for topic in topics %}
+		<li class="list list-group-item  list-group-item-info" value={{ topic.id }} >
+			<div class="row">
+				<div class="col-md-10">
+					{{ topic.get_title }}
+				</div>
+				<div class="col-md-2">
+					<div class="text-right">
+						<a href="{% url 'handbook:admin_topic_see' topic_slug=topic.get_slug %}">
+							<span class="glyphicon glyphicon-eye-open pointer"></span>&nbsp;
+						</a>
+						<a href="{% url 'handbook:admin_topic_edit' topic_slug=topic.get_slug %}">
+							<span class="glyphicon glyphicon-edit pointer"></span>&nbsp;
+						</a>
+						<a href="{% url 'handbook:admin_topic_remove' topic_slug=topic.get_slug %}">
+							<span class="glyphicon glyphicon-remove pointer"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</li>
+	{% endfor %}
+</ol>

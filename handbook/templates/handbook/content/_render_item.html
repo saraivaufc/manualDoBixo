@@ -1,0 +1,14 @@
+{% load i18n %}
+{% load humanize %}	
+<div class="bloger-grid text-justify">
+	<div class="blog-img">
+		<a href="{{ item.get_image.url}} " class="boxer" title="{{ item.get_title }}" data-gallery="gallery">
+			<img src="{{ item.get_image.url }}"/>
+		</a>
+	</div>
+		<h3 class="text-center">{{ item.get_title|title }}</h3>
+		{{ item.get_description|safe|linebreaks }}
+		<ul>
+			<li><a href="#">{{ item.get_creation|naturaltime }}</a></li>
+		</ul>
+</div>

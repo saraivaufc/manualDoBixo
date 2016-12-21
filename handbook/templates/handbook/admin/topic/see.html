@@ -1,0 +1,68 @@
+{% extends 'handbook/admin/topic/see_all.html' %}
+
+{% load i18n %}
+
+{% block title %}{{ topic.title }}{% endblock %}
+
+{% block breadcrumb  %}
+	{{ block.super }}
+	<li><a href="{% url 'handbook:admin_topic_see' topic.get_slug %}">{{ topic.get_title }}</a></li>
+{% endblock  %}
+
+
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+		<a href="{% url 'handbook:admin_item_add' topic_slug=topic.get_slug %}"  class="btn btn-success">
+			<span class="glyphicon glyphicon glyphicon-plus"></span>
+			{% trans "Add Item" %}
+		</a>
+		<a href="{% url 'handbook:admin_topic_edit' topic.id %}"  class="btn btn-primary">
+			<span class="glyphicon glyphicon glyphicon-edit"></span>
+			{% trans "Edit Topic" %}
+		</a>
+		{% include "handbook/admin/topic/_render_topic.html" %}
+	</div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+<script type="text/javascript">
+var sortItems = function(){
+	var list = $("#list_items_sort");
+	var order = [];
+	list.find(".list").each(function(){
+		try{
+			order.push(parseInt($(this).attr("value")));
+		}catch (e) {
+			alert("Error sort items!!!");
+		}
+	});
+	var url = window.location.href;
+	var data = new Object();
+	data['items'] = JSON.stringify(order);
+	data['csrfmiddlewaretoken'] = Cookies.get("csrftoken");
+	console.log(url);
+	console.log(data);
+
+	$.ajax({
+		url: url,
+		data: data,
+		type: 'POST',
+		success: function (resp) {
+			if (resp === '200'){
+				console.log("OK: " + resp.toString());
+			}else{
+				console.log("Error: " + resp.toString());
+			}
+			window.location = window.location;
+		},
+		error: function(e) {
+			alert('Error: '+ e.toString());
+			window.location = window.location;
+		}  
+	});
+}
+</script>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'handbook/admin/topic/see_all.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Topic" %}{% endblock %}
+
+
+{% block content %}
+<form class="form" action="
+{% if action == 'add' %}
+	{% url 'handbook:admin_topic_add' %}
+{% elif action == 'edit' %}
+	{% url 'handbook:admin_topic_edit' topic.get_slug %}
+{% else %}.{% endif %}
+" method="POST" >
+	{% csrf_token %}
+	{% include 'handbook/_fields.html' %}
+	<button class="btn btn-primary">{% trans "Submit" %}</button>
+</form>
+{% endblock %}

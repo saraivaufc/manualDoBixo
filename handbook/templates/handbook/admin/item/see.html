@@ -1,0 +1,26 @@
+{% extends 'handbook/admin/topic/see.html' %}
+
+{% load i18n %}
+
+{% block title %}{{ topic.title }}{% endblock %}
+
+{% block breadcrumb  %}
+	{{ block.super }}
+	<li>{{ item.get_title }}</li>
+{% endblock  %}
+
+
+{% block content %}
+
+<a href="{% url 'handbook:admin_item_edit' topic_slug=topic.get_slug item_slug=item.get_slug %}"  class="btn btn-primary">
+	<span class="glyphicon glyphicon glyphicon-edit"></span>
+	{% trans "Edit Item" %}
+</a>
+<a href="{% url 'handbook:admin_item_remove' topic_slug=topic.get_slug item_slug=item.get_slug %}"  class="btn btn-danger">
+	<span class="glyphicon glyphicon glyphicon-remove"></span>
+	{% trans "Remove Item" %}
+</a>
+<div class="row">
+	{% include "handbook/admin/item/_render_item.html" %}
+</div>
+{% endblock %}

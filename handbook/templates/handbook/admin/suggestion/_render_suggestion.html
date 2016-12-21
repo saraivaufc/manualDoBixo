@@ -1,0 +1,24 @@
+{% load i18n %}
+
+<div class="container-fluid">
+	<div class="panel">
+		<div class="panel-heading bg-text">
+			<div class="row">
+				<h3 class="text-center">{% trans "Suggestion" %}</h3>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table bg-text">
+				<tr>
+					<td>{% trans "Name" %} : </td><td>{{ suggestion.name }}</td>
+				</tr>
+				<tr>
+					<td>{% trans "Email" %} : </td><td>{{ suggestion.email }}</td>
+				</tr>
+				<tr>
+					<td>{% trans "Suggestion" %} : </td><td>{{ suggestion.suggestion }}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

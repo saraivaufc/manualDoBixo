@@ -1,0 +1,45 @@
+ol,li{
+    position: relative;
+}
+
+.list_topics_sort{
+	display: block;
+}
+
+.list_items_sort{
+	display: block;
+}
+
+
+/* line 1, /Users/jonasvonandrian/jquery-sortable/source/css/jquery-sortable.css.sass */
+body.dragging, body.dragging * {
+	cursor: move !important; 
+}
+
+/* line 4, /Users/jonasvonandrian/jquery-sortable/source/css/jquery-sortable.css.sass */
+.dragged {
+	position: absolute;
+	top: 0;
+	opacity: 0.5;
+	z-index: 2000;
+}
+
+  /* line 13, /Users/jonasvonandrian/jquery-sortable/source/css/jquery-sortable.css.sass */
+ol.vertical li {
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #cccccc;
+}
+ol.vertical li.placeholder:before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	margin-top: -5px;
+	left: -5px;
+	top: -4px;
+	border: 5px solid transparent;
+	border-left-color: red;
+	border-right: none; 
+}

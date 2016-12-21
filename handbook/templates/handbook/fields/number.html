@@ -1,0 +1,9 @@
+{% include 'handbook/fields/caption.html' %}
+{% include 'handbook/fields/errors.html' %}
+<div class="form-group">
+	<input class="form-control" title="{{ field.help_text }}"
+		{% if field.field.required %}required{% endif %}
+		name="{% if form.prefix %}{{form.prefix}}-{% endif %}{{ field.name }}"
+		type="number" id="{{ field.auto_id }}"
+		{% if field.value %}value="{{ field.value }}"{% endif %}/>
+</div>

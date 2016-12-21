@@ -1,0 +1,2042 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-15 20:47-0300\n"
+"PO-Revision-Date: 2016-03-13 23:19-0234\n"
+"Last-Translator: None None <admin@email.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.7.8\n"
+
+#: env/lib/python2.7/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Mapa do Site"
+
+#: env/lib/python2.7/site-packages/django/contrib/staticfiles/apps.py:8
+msgid "Static Files"
+msgstr "Arquivos Estáticos"
+
+#: env/lib/python2.7/site-packages/django/contrib/syndication/apps.py:8
+msgid "Syndication"
+msgstr "Syndication"
+
+#: env/lib/python2.7/site-packages/django/contrib/webdesign/apps.py:8
+msgid "Web Design"
+msgstr "Design Web"
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:21
+msgid "Enter a valid value."
+msgstr "Entre com um valor válido."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:77
+#: env/lib/python2.7/site-packages/django/forms/fields.py:664
+msgid "Enter a valid URL."
+msgstr "Entre com uma URL válida."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:112
+msgid "Enter a valid integer."
+msgstr "Entre com um inteiro válido."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:123
+msgid "Enter a valid email address."
+msgstr "Entre com um endereço de email válido."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:188
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Introduza um 'slug' válido consistindo de letras, números, sublinhados ou "
+"hifens."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:191
+#: env/lib/python2.7/site-packages/django/core/validators.py:210
+msgid "Enter a valid IPv4 address."
+msgstr "Entre com um endereço de IP válido."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:196
+#: env/lib/python2.7/site-packages/django/core/validators.py:211
+msgid "Enter a valid IPv6 address."
+msgstr "Entre com um endereço de IPv6 válido."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:206
+#: env/lib/python2.7/site-packages/django/core/validators.py:209
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr "Entre com um endereço de IPv4 ou IPv6 válido."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:232
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1075
+msgid "Enter only digits separated by commas."
+msgstr "Insira apenas dígitos separados por vírgulas."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:239
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Certifique-se este valor é %(limit_value)s (ele tem %(show_value)s )."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:258
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Certifique-se este valor for menor ou igual a %(limit_value)s."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:265
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Assegure que este valor seja maior do que ou igual a %(limit_value)s."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:274
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Certifique-se este valor tem pelo menos  %(limit_value)d caracteres (tem "
+"%(show_value)d)."
+msgstr[1] ""
+"Certifique-se que este valor tenha pelo menos %(limit_value)d caracteres "
+"(ele tem %(show_value)d)."
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:285
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Certifique-se este valor tenha, no máximo %(limit_value)d caracteres (ele "
+"tem %(show_value)d)."
+msgstr[1] ""
+"Certifique-se este valor tenha no máximo %(limit_value)d caracteres (ele tem "
+"%(show_value)d)."
+
+#: env/lib/python2.7/site-packages/django/db/models/base.py:971
+#: env/lib/python2.7/site-packages/django/forms/models.py:716
+msgid "and"
+msgstr "e"
+
+#: env/lib/python2.7/site-packages/django/db/models/base.py:973
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s com este %(field_labels)s já existe."
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:104
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "O valor %(value)r não é uma opção válida."
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:105
+msgid "This field cannot be null."
+msgstr "Este campo não pode ser nulo."
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:106
+msgid "This field cannot be blank."
+msgstr "Este campo não pode estar vazio."
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:107
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s com este %(field_label)s já existe."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:111
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s deve ser único para %(date_field_label)s %(lookup_type)s."
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:118
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Campo do tipo: %(field_type)s"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:852
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1582
+msgid "Integer"
+msgstr "Inteiro"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:856
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1580
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr "'%(value)s' valor deve ser um inteiro."
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:931
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr "'%(value)s' valor deve ser VERDADEIRO ou FALSO."
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:933
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (Verdadeiro ou False)"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1009
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1070
+msgid "Comma-separated integers"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1085
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1087
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1194
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1090
+msgid "Date (without time)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1192
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1196
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1200
+msgid "Date (with time)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1306
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1308
+msgid "Decimal number"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1453
+msgid "Email address"
+msgstr "Endereço de Email"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1479
+msgid "File path"
+msgstr "Caminho do arquivo"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1546
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1548
+msgid "Floating point number"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1632
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1647
+msgid "IPv4 address"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1677
+msgid "IP address"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1756
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1758
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1818
+msgid "Positive integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1830
+msgid "Positive small integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1843
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1872
+msgid "Small integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1879
+msgid "Text"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1902
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1904
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1907
+#: env/lib/python2.7/site-packages/haystack/templates/panels/haystack.html:8
+msgid "Time"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1989
+msgid "URL"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2012
+msgid "Raw binary data"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/files.py:225
+msgid "File"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/files.py:375
+#: handbook/models/item.py:16
+msgid "Image"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:1606
+#, python-format
+msgid "%(model)s instance with pk %(pk)r does not exist."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:1608
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:1798
+msgid "One-to-one relationship"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:1868
+msgid "Many-to-many relationship"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:55
+msgid "This field is required."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:225
+msgid "Enter a whole number."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:268
+#: env/lib/python2.7/site-packages/django/forms/fields.py:305
+msgid "Enter a number."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:307
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:311
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:315
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:426
+#: env/lib/python2.7/site-packages/django/forms/fields.py:1132
+msgid "Enter a valid date."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:450
+#: env/lib/python2.7/site-packages/django/forms/fields.py:1133
+msgid "Enter a valid time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:472
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:553
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:554
+msgid "No file was submitted."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:555
+msgid "The submitted file is empty."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:557
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:560
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:621
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:771
+#: env/lib/python2.7/site-packages/django/forms/fields.py:860
+#: env/lib/python2.7/site-packages/django/forms/models.py:1205
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:861
+#: env/lib/python2.7/site-packages/django/forms/fields.py:976
+#: env/lib/python2.7/site-packages/django/forms/models.py:1204
+msgid "Enter a list of values."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:977
+msgid "Enter a complete value."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: env/lib/python2.7/site-packages/django/forms/forms.py:122
+msgid ":"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/forms.py:192
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: env/lib/python2.7/site-packages/django/forms/forms.py:620
+msgid ":?.!"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:95
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:332
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:339
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:367
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:369
+msgid "Order"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:371
+msgid "Delete"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:710
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:714
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:720
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:728
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:1030
+msgid "The inline foreign key did not match the parent instance primary key."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:1096
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:1207
+#, python-format
+msgid "\"%(pk)s\" is not a valid value for a primary key."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:1218
+msgid ""
+"Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/utils.py:157
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:350
+msgid "Currently"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:351
+msgid "Change"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:352
+msgid "Clear"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:546
+msgid "Unknown"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:547
+#: handbook/templates/handbook/accounts/settings/address.html:59
+msgid "Yes"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:548
+#: handbook/templates/handbook/accounts/settings/address.html:58
+msgid "No"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:855
+msgid "yes,no,maybe"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:884
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:896
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:898
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:900
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:902
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:904
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:906
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:59
+msgid "p.m."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:60
+msgid "a.m."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:65
+msgid "PM"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:66
+msgid "AM"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:149
+msgid "midnight"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:151
+msgid "noon"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "January"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "February"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "March"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "April"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "May"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "June"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "July"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "August"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "September"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "October"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "November"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:20
+msgid "December"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "jan"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "feb"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "mar"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "apr"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "may"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "jun"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "jul"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "aug"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "sep"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "oct"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "nov"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "dec"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:35
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:36
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:37
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:38
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:39
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:40
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:41
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:42
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:49
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:50
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:51
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:52
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:53
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:54
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:55
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:56
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/ipv6.py:10
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s..."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/text.py:245
+#: handbook/templates/handbook/accounts/login.html:39
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: env/lib/python2.7/site-packages/django/utils/text.py:264
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:57
+msgid ", "
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:25
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:26
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:27
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:28
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:29
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:30
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:46
+msgid "0 minutes"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/csrf.py:105
+msgid "Forbidden"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/csrf.py:106
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/csrf.py:110
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/csrf.py:115
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/csrf.py:120
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/csrf.py:125
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/csrf.py:129
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:43
+msgid "No year specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:99
+msgid "No month specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:158
+msgid "No day specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:214
+msgid "No week specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:369
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:397
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:650
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:682
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/detail.py:54
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/list.py:62
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/list.py:67
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/list.py:158
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/static.py:54
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/static.py:56
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/static.py:96
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/admin.py:128
+#, python-format
+msgid "0 of %(count)d selected"
+msgid_plural "of %(count)d selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/haystack/admin.py:130
+#, python-format
+msgid "%(total_count)s selected"
+msgid_plural "All %(total_count)s selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python2.7/site-packages/haystack/forms.py:26
+msgid "Search"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/forms.py:100
+msgid "Search In"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/panels.py:26
+msgid "Haystack"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/panels.py:50
+msgid "Search Queries"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/templates/panels/haystack.html:5
+msgid "Query"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/templates/panels/haystack.html:6
+msgid "Backend Alias"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/templates/panels/haystack.html:7
+msgid "Timeline"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/haystack/templates/panels/haystack.html:9
+msgid "Kwargs"
+msgstr "Chaves"
+
+#: env/lib/python2.7/site-packages/httplib2/__init__.py:410
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/httplib2/__init__.py:520
+#, python-format
+msgid "Unsupported value for qop: %s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/httplib2/__init__.py:523
+#: env/lib/python2.7/site-packages/httplib2/__init__.py:585
+#, python-format
+msgid "Unsupported value for algorithm: %s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/httplib2/__init__.py:582
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/httplib2/__init__.py:588
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/httplib2/__init__.py:1374
+msgid "Redirected but the response is missing a Location: header."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/versatileimagefield/fields.py:33
+msgid "Versatile Image Field"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/versatileimagefield/widgets.py:26
+msgid "Primary Point of Interest"
+msgstr ""
+
+#: handbook/forms/accounts.py:13 handbook/models/contact.py:7
+#: handbook/models/user.py:70
+#: handbook/templates/handbook/admin/suggestion/_render_suggestion.html:16
+#: handbook/templates/handbook/contact_email.html:16
+msgid "Email"
+msgstr "Email"
+
+#: handbook/forms/accounts.py:13 handbook/forms/accounts.py:15
+#: handbook/models/user.py:70
+msgid "Please enter you email."
+msgstr "Por favor, entre com seu endereço de email."
+
+#: handbook/forms/accounts.py:16 handbook/forms/accounts.py:24
+msgid "Password"
+msgstr "Senha"
+
+#: handbook/forms/accounts.py:16 handbook/forms/accounts.py:18
+msgid "Please enter you password."
+msgstr "Por favor, entre com sua senha."
+
+#: handbook/forms/accounts.py:25
+msgid "Password confirmation"
+msgstr "Senha de Confirmação"
+
+#: handbook/forms/accounts.py:27
+msgid "General"
+msgstr "Geral"
+
+#: handbook/forms/accounts.py:28 handbook/models/user.py:174
+msgid "Organizer"
+msgstr "Organizador"
+
+#: handbook/forms/accounts.py:30
+msgid "Group"
+msgstr "Grupo"
+
+#: handbook/forms/accounts.py:31 handbook/models/access.py:12
+#: handbook/templates/handbook/admin/person/see_access_keys.html:26
+msgid "Key"
+msgstr "Chave"
+
+#: handbook/forms/accounts.py:32
+msgid ""
+"If you want to create a record in this group should have an access key for "
+"this, please contact the administrator."
+msgstr ""
+"Se você deseja criar um registro nesse grupo deve ter uma chave de acesso. "
+"Para isso, entre em contato com o administrador."
+
+#: handbook/forms/accounts.py:41
+msgid "Passwords don't match"
+msgstr "As senhas não correspondem"
+
+#: handbook/info.py:5 handbook/info.py:6
+#: handbook/templates/handbook/_base.html:34
+msgid "Freshman Handbook"
+msgstr "Manual do Bixo"
+
+#: handbook/info.py:7
+msgid "Federal University of Ceará - Quixadá Campus"
+msgstr "Universidade Federal do Ceará - Campus Quixadá"
+
+#: handbook/info.py:8
+msgid "www.manualdobixo.quixada.ufc.br"
+msgstr "www.manualdobixo.quixada.ufc.br"
+
+#: handbook/info.py:9
+msgid "Ciano Saraiva <saraiva.ufc@gmail.com>"
+msgstr "Ciano Saraiva <saraiva.ufc@gmail.com>"
+
+#: handbook/info.py:10
+msgid "Institutional website"
+msgstr "Site Institucional"
+
+#: handbook/info.py:11
+msgid ""
+"A practical guide to your first steps at the Federal University of Ceará. "
+"With it you have quick access to the regulations of the institution, "
+"descriptions of teachers and disciplines, how to get housing tips, among "
+"many other essential information to any freshman."
+msgstr ""
+"Um guia prático para seus primeiros passos na Universidade Federal do Ceará. "
+"Com ele você terá acesso rápido aos regulamentos da instituição, descrições "
+"de professores e disciplinas, dicas de como conseguir moradia, entre várias "
+"outras informações indispensáveis a qualquer calouro."
+
+#: handbook/info.py:12
+msgid "Education, Handbook, Freshman , University"
+msgstr "Educação, Manual, Calouro, Universidade"
+
+#: handbook/models/access.py:11
+#: handbook/templates/handbook/admin/person/see_access_keys.html:27
+msgid "Creator"
+msgstr "Criador"
+
+#: handbook/models/access.py:13
+msgid "In Use"
+msgstr "Em uso"
+
+#: handbook/models/access.py:15 handbook/models/item.py:13
+#: handbook/models/topic.py:11
+msgid "Creation"
+msgstr "Criação"
+
+#: handbook/models/access.py:16
+msgid "Exists"
+msgstr "Existe"
+
+#: handbook/models/access.py:38
+msgid "Register Key"
+msgstr "Chave de Registro"
+
+#: handbook/models/access.py:39
+msgid "Register Keys"
+msgstr "Chaves de Registros"
+
+#: handbook/models/access.py:55
+msgid "Organizer Key"
+msgstr "Chave do Organizador"
+
+#: handbook/models/access.py:56
+msgid "Organizes Key"
+msgstr "Chaves dos Organizadores"
+
+#: handbook/models/contact.py:6 handbook/models/contact.py:24
+#: handbook/models/version.py:5
+#: handbook/templates/handbook/admin/suggestion/_render_suggestion.html:13
+#: handbook/templates/handbook/contact_email.html:15
+msgid "Name"
+msgstr "Nome"
+
+#: handbook/models/contact.py:8
+#: handbook/templates/handbook/contact_email.html:17
+msgid "Message"
+msgstr "Mensagem"
+
+#: handbook/models/contact.py:25
+msgid "Names"
+msgstr "Nomes"
+
+#: handbook/models/item.py:9 handbook/models/topic.py:8
+msgid "Position"
+msgstr "Posição"
+
+#: handbook/models/item.py:10
+#: handbook/templates/handbook/admin/topic/form.html:5
+msgid "Topic"
+msgstr "Tópico"
+
+#: handbook/models/item.py:11 handbook/models/topic.py:9
+msgid "Title"
+msgstr "Título"
+
+#: handbook/models/item.py:12 handbook/models/topic.py:10
+msgid "slug"
+msgstr "Slug"
+
+#: handbook/models/item.py:15
+msgid "Description"
+msgstr "Descrição"
+
+#: handbook/models/user.py:42
+msgid "location"
+msgstr "Localização"
+
+#: handbook/models/user.py:43
+msgid "last seen"
+msgstr "visto pela última vez"
+
+#: handbook/models/user.py:44
+msgid "last ip"
+msgstr "último IP"
+
+#: handbook/models/user.py:46
+msgid "moderator status"
+msgstr "Status de Moderador"
+
+#: handbook/models/user.py:47
+msgid "staff status"
+msgstr "Status de Técnico"
+
+#: handbook/models/user.py:48
+msgid "Designates whether the user can log into this admin site."
+msgstr "Designa se o usuário pode entrar neste site de administração."
+
+#: handbook/models/user.py:68
+msgid "First Name "
+msgstr "Primeiro Nome"
+
+#: handbook/models/user.py:68
+msgid "Please enter you first name."
+msgstr "Por favor, entrar com seu primeiro nome."
+
+#: handbook/models/user.py:69
+msgid "Last Name "
+msgstr "Último Nome"
+
+#: handbook/models/user.py:69
+msgid "Please enter you last name."
+msgstr "Por favor, entre com seu último nome."
+
+#: handbook/models/user.py:71
+msgid "active"
+msgstr "Ativo"
+
+#: handbook/models/user.py:72
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+"Designa se este usuário deve ser tratado como ativo. Desmarque isso em vez "
+"de excluir contas."
+
+#: handbook/models/user.py:73
+msgid "date joined"
+msgstr "Data de Admissão"
+
+#: handbook/models/user.py:127
+msgid "Profile Image"
+msgstr "Imagem de Perfil"
+
+#: handbook/models/user.py:127
+msgid "Please enter you profile image."
+msgstr "Por favor, entre com sua imagem de perfil."
+
+#: handbook/models/user.py:156
+msgid "Person"
+msgstr "Pessoa"
+
+#: handbook/models/user.py:157
+msgid "Persons"
+msgstr "Pessoas"
+
+#: handbook/models/user.py:165
+msgid "General User"
+msgstr "Usuário Geral"
+
+#: handbook/models/user.py:166
+msgid "General Users"
+msgstr "Usuários Gerais"
+
+#: handbook/models/user.py:175
+msgid "Organizes"
+msgstr "Organizadores"
+
+#: handbook/models/version.py:6
+msgid "Version"
+msgstr "Versão"
+
+#: handbook/templates/handbook/_base.html:90
+#: handbook/templates/handbook/_header.html:23
+#: handbook/templates/handbook/admin/admin.html:6
+#: handbook/templates/handbook/index.html:7
+msgid "Home"
+msgstr "Início"
+
+#: handbook/templates/handbook/_footer.html:5
+msgid "SAY HELLO"
+msgstr "DIGA OLÁ"
+
+#: handbook/templates/handbook/_footer.html:6
+msgid ""
+"Follow us on major social networks is stay on top of rolling in Freshman "
+"Handbook ;)"
+msgstr ""
+"Acompanhe-nos nas principais redes sociais é fique por dentro do que rola no "
+"Manual do Bixo ;)"
+
+#: handbook/templates/handbook/_footer.html:41
+msgid "All rights Reserved | Designed by"
+msgstr "Todos os direitos reservados | Projetado por"
+
+#: handbook/templates/handbook/_form.html:11
+#: handbook/templates/handbook/accounts/settings/address.html:32
+#: handbook/templates/handbook/accounts/settings/profile.html:29
+#: handbook/templates/handbook/admin/item/form.html:18
+#: handbook/templates/handbook/admin/topic/form.html:18
+#: handbook/templates/handbook/contact.html:22
+msgid "Submit"
+msgstr "Enviar"
+
+#: handbook/templates/handbook/_header.html:29
+#: handbook/templates/handbook/admin/person/see_admins.html:8
+msgid "Admins"
+msgstr "Administradores"
+
+#: handbook/templates/handbook/_header.html:33
+#: handbook/templates/handbook/about.html:5
+#: handbook/templates/handbook/about.html:9
+msgid "About"
+msgstr "Sobre"
+
+#: handbook/templates/handbook/_header.html:36
+#: handbook/templates/handbook/contact.html:5
+#: handbook/templates/handbook/contact.html:9
+#: handbook/templates/handbook/contact.html:14
+msgid "Contact"
+msgstr "Contato"
+
+#: handbook/templates/handbook/_header.html:43
+msgid "Search..."
+msgstr "Buscar..."
+
+#: handbook/templates/handbook/_header.html:50
+msgid "Mobile"
+msgstr "Móvel"
+
+#: handbook/templates/handbook/_header.html:54
+msgid "Plus"
+msgstr "Mais"
+
+#: handbook/templates/handbook/_header.html:58
+msgid "Logout"
+msgstr "Sair"
+
+#: handbook/templates/handbook/_header.html:60
+msgid "Enter"
+msgstr "Entrar"
+
+#: handbook/templates/handbook/_header.html:82
+msgid "Mobile Version"
+msgstr "Versão Móvel"
+
+#: handbook/templates/handbook/_header.html:85
+msgid "Android Version:"
+msgstr "Versão Android:"
+
+#: handbook/templates/handbook/_header.html:96
+msgid "Close"
+msgstr "Fechar"
+
+#: handbook/templates/handbook/_no_script.html:6
+msgid ""
+"For full functionality of this site it is necessary to enable JavaScript."
+"<br> Here are the <a href=\"http://www.enable-javascript.com/pt/\" target="
+"\"_blank\">instructions on how to enable JavaScript in your browser </a>."
+msgstr ""
+"Para obter a funcionalidade completa deste site é necessário habilitar o "
+"JavaScript. <br> Aqui estão as <a href=\"http://www.enable-javascript.com/pt/"
+"\"  target=\"_blank\"> instruções sobre como ativar JavaScript no seu "
+"navegador </a>."
+
+#: handbook/templates/handbook/about.html:14
+msgid "Criado Por:"
+msgstr "Criado por:"
+
+#: handbook/templates/handbook/about.html:26
+#: handbook/templates/handbook/about.html:39
+msgid "Information Systems Student"
+msgstr "Estudante de Sistemas de Informação"
+
+#: handbook/templates/handbook/about.html:52
+msgid "Information Systems Coordinator"
+msgstr "Coordenador de Sistemas de Informação"
+
+#: handbook/templates/handbook/about.html:65
+msgid "Secretary of Campus"
+msgstr "Secretária do Campus"
+
+#: handbook/templates/handbook/accounts/login.html:8
+#: handbook/templates/handbook/accounts/login.html:48
+msgid "Login"
+msgstr "Entrar"
+
+#: handbook/templates/handbook/accounts/login.html:14
+msgid "Login or"
+msgstr "Entrar ou"
+
+#: handbook/templates/handbook/accounts/login.html:14
+msgid "Sign up"
+msgstr "Inscrever-se"
+
+#: handbook/templates/handbook/accounts/login.html:55
+msgid "Remember Me"
+msgstr "Lembre de mim"
+
+#: handbook/templates/handbook/accounts/login.html:60
+msgid "Forgot password?"
+msgstr "Esqueceu a senha?"
+
+#: handbook/templates/handbook/accounts/register.html:6
+#: handbook/templates/handbook/accounts/register.html:10
+#: handbook/templates/handbook/accounts/register.html:19
+#: handbook/templates/handbook/accounts/register.html:24
+msgid "Register"
+msgstr "Cadastrar"
+
+#: handbook/templates/handbook/accounts/settings/address.html:10
+#: handbook/templates/handbook/accounts/settings/settings.html:27
+msgid "Address"
+msgstr "Endereço"
+
+#: handbook/templates/handbook/accounts/settings/address.html:18
+msgid "Edit Address"
+msgstr "Editar endereço"
+
+#: handbook/templates/handbook/accounts/settings/address.html:37
+msgid "CEP:"
+msgstr "CEP:"
+
+#: handbook/templates/handbook/accounts/settings/address.html:40
+msgid "Street:"
+msgstr "Rua:"
+
+#: handbook/templates/handbook/accounts/settings/address.html:43
+msgid "District:"
+msgstr "Bairro:"
+
+#: handbook/templates/handbook/accounts/settings/address.html:46
+msgid "City:"
+msgstr "Cidade:"
+
+#: handbook/templates/handbook/accounts/settings/address.html:49
+msgid "State:"
+msgstr "Estado:"
+
+#: handbook/templates/handbook/accounts/settings/address.html:57
+msgid "Address no exists, add address now?"
+msgstr "Endereço não existe, adicionar o endereço agora?"
+
+#: handbook/templates/handbook/accounts/settings/profile.html:10
+#: handbook/templates/handbook/accounts/settings/settings.html:24
+msgid "Profile"
+msgstr "Perfil"
+
+#: handbook/templates/handbook/accounts/settings/profile.html:19
+msgid "Edit Profile"
+msgstr "Editar perfil"
+
+#: handbook/templates/handbook/accounts/settings/profile.html:43
+msgid "First Name:"
+msgstr "Primeiro Nome:"
+
+#: handbook/templates/handbook/accounts/settings/profile.html:46
+msgid "Last Name:"
+msgstr "Último Nome:"
+
+#: handbook/templates/handbook/accounts/settings/profile.html:49
+msgid "Email:"
+msgstr "Email"
+
+#: handbook/templates/handbook/accounts/settings/profile.html:52
+msgid "Date Joined:"
+msgstr "Data de Admissão:"
+
+#: handbook/templates/handbook/accounts/settings/profile.html:55
+msgid "User Groups:"
+msgstr "Grupos do usuário:"
+
+#: handbook/templates/handbook/accounts/settings/settings.html:10
+msgid "Settings"
+msgstr "Configurações"
+
+#: handbook/templates/handbook/admin/item/form.html:5
+msgid "Item"
+msgstr "Item"
+
+#: handbook/templates/handbook/admin/item/see.html:17
+msgid "Edit Item"
+msgstr "Editar item"
+
+#: handbook/templates/handbook/admin/item/see.html:21
+msgid "Remove Item"
+msgstr "Remover item"
+
+#: handbook/templates/handbook/admin/person/see_access_keys.html:6
+msgid "View Keys"
+msgstr "Ver chaves"
+
+#: handbook/templates/handbook/admin/person/see_access_keys.html:15
+msgid "Generate Key"
+msgstr "Gerar Chave"
+
+#: handbook/templates/handbook/admin/person/see_access_keys.html:20
+msgid "Created Key"
+msgstr "Chave Gerada"
+
+#: handbook/templates/handbook/admin/person/see_access_keys.html:28
+msgid "User"
+msgstr "Usuário"
+
+#: handbook/templates/handbook/admin/person/see_access_keys.html:29
+#: handbook/templates/handbook/admin/person/see_admins.html:31
+msgid "Options"
+msgstr "Opções"
+
+#: handbook/templates/handbook/admin/person/see_access_keys.html:40
+#: handbook/templates/handbook/admin/person/see_admins.html:48
+msgid "Remove"
+msgstr "Remover"
+
+#: handbook/templates/handbook/admin/person/see_admins.html:16
+msgid "See Access Keys"
+msgstr "Ver chaves de acesso"
+
+#: handbook/templates/handbook/admin/person/see_admins.html:20
+msgid "Trash"
+msgstr "Lixeira"
+
+#: handbook/templates/handbook/admin/person/see_admins.html:27
+msgid "Fisrt Name"
+msgstr "Primeiro Nome"
+
+#: handbook/templates/handbook/admin/person/see_admins.html:28
+msgid "Last Name"
+msgstr "Último Nome"
+
+#: handbook/templates/handbook/admin/person/see_admins.html:29
+msgid "EMail"
+msgstr "Email"
+
+#: handbook/templates/handbook/admin/person/see_admins.html:30
+msgid "Date Joined"
+msgstr "Data de admissão"
+
+#: handbook/templates/handbook/admin/person/see_admins.html:44
+msgid "Restore"
+msgstr "Recuperar"
+
+#: handbook/templates/handbook/admin/suggestion/_render_suggestion.html:7
+#: handbook/templates/handbook/admin/suggestion/_render_suggestion.html:19
+#: handbook/templates/handbook/admin/suggestion/view_suggestion.html:5
+msgid "Suggestion"
+msgstr "Sugestão"
+
+#: handbook/templates/handbook/admin/suggestion/_render_suggestions.html:4
+#: handbook/templates/handbook/admin/suggestion/view_suggestions.html:5
+msgid "Suggestions"
+msgstr "Sugestões"
+
+#: handbook/templates/handbook/admin/suggestion/_render_suggestions.html:23
+msgid "Without Suggestions"
+msgstr "Sem sugestões"
+
+#: handbook/templates/handbook/admin/suggestion/view_suggestion.html:14
+#: handbook/templates/handbook/admin/suggestion/view_suggestions.html:14
+msgid "Back"
+msgstr "Voltar"
+
+#: handbook/templates/handbook/admin/topic/_render_topic.html:25
+msgid "No items found..."
+msgstr "Nenhum item encontrado..."
+
+#: handbook/templates/handbook/admin/topic/see.html:16
+msgid "Add Item"
+msgstr "Adicionar item"
+
+#: handbook/templates/handbook/admin/topic/see.html:20
+msgid "Edit Topic"
+msgstr "Editar tópico"
+
+#: handbook/templates/handbook/admin/topic/see_all.html:5
+msgid "Topics"
+msgstr "Tópicos"
+
+#: handbook/templates/handbook/admin/topic/see_all.html:17
+msgid "New Topic"
+msgstr "Novo tópico"
+
+#: handbook/templates/handbook/admin/topic/see_all.html:21
+msgid "View Suggestions"
+msgstr "Ver sugestões"
+
+#: handbook/templates/handbook/admin/topic/see_all.html:27
+msgid "Update"
+msgstr "Atualizar"
+
+#: handbook/templates/handbook/contact_email.html:9
+msgid ""
+"\n"
+"\t\t\tYou received this email because someone contacted.\n"
+"\t\t"
+msgstr ""
+"\n"
+"\t\t\tVocê está recebendo este e-mail porque alguém entrou em contato.\n"
+"\t\t"
+
+#: handbook/templates/handbook/fields/caption.html:5
+msgid "This field in required."
+msgstr "Este campo é requerido."
+
+#: handbook/templates/handbook/fields/select_multiple.html:5
+msgid "Select an option"
+msgstr "Selecione uma opção"
+
+#: handbook/templates/handbook/index.html:14
+msgid "Categories"
+msgstr "Categorias"
+
+#: handbook/templates/handbook/index.html:18
+msgid "All"
+msgstr "Todos"
+
+#: handbook/templates/handbook/index.html:49
+msgid "Readmore"
+msgstr "Ler mais"
+
+#: handbook/templates/handbook/index.html:58
+msgid "No item found!!!"
+msgstr "Nenhum item encontrado!!!"
+
+#: handbook/templates/handbook/index.html:71
+#: handbook/templates/handbook/index.html:73
+msgid "Previous"
+msgstr "Anterior"
+
+#: handbook/templates/handbook/index.html:89
+#: handbook/templates/handbook/index.html:91
+msgid "Next"
+msgstr "Próximo"
+
+#: handbook/templates/handbook/status/404.html:178
+msgid "You Requested the page that is no longer There."
+msgstr "Você solicitou uma página que não está mais aqui."
+
+#: handbook/templates/handbook/status/404.html:179
+msgid "Back To Home"
+msgstr "Voltar ao início"
+
+#: handbook/templates/registration/password_change_done.html:6
+msgid "Password change successful"
+msgstr "Senha alterada com sucesso"
+
+#: handbook/templates/registration/password_change_done.html:8
+msgid "Your password was changed."
+msgstr "Sua senha foi alterada."
+
+#: handbook/templates/registration/password_change_form.html:6
+msgid "Password reset"
+msgstr "Recuperar senha"
+
+#: handbook/templates/registration/password_change_form.html:8
+#: handbook/templates/registration/password_reset_form.html:19
+msgid "Forgotten your password? Enter your email addess below,"
+msgstr "Esqueceu sua senha? Digite seu email abaixo,"
+
+#: handbook/templates/registration/password_change_form.html:14
+#: handbook/templates/registration/password_reset_confirm.html:21
+msgid "Change my password"
+msgstr "Alterar minha senha"
+
+#: handbook/templates/registration/password_reset_complete.html:10
+msgid "Password reset complete"
+msgstr "Senha alterada com  sucesso"
+
+#: handbook/templates/registration/password_reset_complete.html:13
+msgid "Your password has been set.  You may go ahead and log in now"
+msgstr "Sua senha foi alterada. Você pode ir em frente e entrar agora"
+
+#: handbook/templates/registration/password_reset_complete.html:15
+#, python-format
+msgid "Go to <a href=\"%(login_url)s\">Log in</a>..."
+msgstr "Vá para <a href=\"%(login_url)s\">Entrar</a>... "
+
+#: handbook/templates/registration/password_reset_confirm.html:10
+msgid "Enter new password"
+msgstr "Entre com nova senha"
+
+#: handbook/templates/registration/password_reset_confirm.html:14
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Por favor insira sua nova senha duas vezes para que possamos verificar se "
+"você digitou corretamente."
+
+#: handbook/templates/registration/password_reset_confirm.html:27
+msgid "Password reset unsuccessful"
+msgstr "Redefinição de senha malsucedida"
+
+#: handbook/templates/registration/password_reset_confirm.html:28
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"O link de redefinição de senha era inválida, possivelmente porque ele já foi "
+"utilizado. Por favor, solicite uma nova redefinição de senha."
+
+#: handbook/templates/registration/password_reset_done.html:11
+msgid "Password Reset Done"
+msgstr "Alteração da senha concluída"
+
+#: handbook/templates/registration/password_reset_done.html:14
+msgid "Password reset successful!!!"
+msgstr "Senha alterada com sucesso!!!"
+
+#: handbook/templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Você está recebendo este e-mail porque você pediu uma redefinição de senha "
+"para sua conta de usuário em %(site_name)s."
+
+#: handbook/templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Por favor, vá para a seguinte página e escolher uma nova senha:"
+
+#: handbook/templates/registration/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr "Seu nome de usuário, caso você tenha esquecido:"
+
+#: handbook/templates/registration/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr "Obrigado por usar o nosso site!"
+
+#: handbook/templates/registration/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "A equipe do %(site_name)s"
+
+#: handbook/templates/registration/password_reset_form.html:7
+msgid "Password Reset"
+msgstr "Senha recuperada"
+
+#: handbook/templates/registration/password_reset_form.html:16
+msgid "Reset Password"
+msgstr "Recuperar senha"
+
+#: handbook/templates/registration/password_reset_form.html:26
+msgid "Reset my password"
+msgstr "Recuperar minha senha"
+
+#: handbook/views/accounts.py:45
+msgid "Email or password incorrect."
+msgstr "Email ou senha estão incorretos."
+
+#: handbook/views/accounts.py:47
+msgid "User no exists."
+msgstr "Usuário não existe."
+
+#: handbook/views/accounts.py:49 handbook/views/accounts.py:95
+msgid "Form no valid"
+msgstr "Formulário está inválido."
+
+#: handbook/views/accounts.py:74
+msgid "Key no found"
+msgstr "Chave não encontrada."
+
+#: handbook/views/accounts.py:77 handbook/views/accounts.py:97
+msgid "Group not found."
+msgstr "Grupo não encontrado."
+
+#: handbook/views/accounts.py:86
+msgid "User created success."
+msgstr "Usuário criado com sucesso."
+
+#: handbook/views/accounts.py:93
+msgid "Created user error."
+msgstr "Erro ao criar usuário."
+
+#: handbook/views/accounts.py:114
+msgid "Profile successfully edit."
+msgstr "Perfil editado com sucesso."
+
+#: handbook/views/accounts.py:117
+msgid "Form no valid."
+msgstr "Formulário está inválido. "
+
+#: handbook/views/accounts.py:125
+msgid "Action no found. Used action default."
+msgstr "Ação não encontrada. Usando ação padrão."
+
+#: handbook/views/admin/item.py:32
+msgid "Item No Exists!!!"
+msgstr "Item não existe!!!"
+
+#: handbook/views/admin/item.py:56
+msgid "Fail add Item!!!"
+msgstr "Falha ao adicionar item!!!"
+
+#: handbook/views/admin/item.py:58 handbook/views/admin/item.py:89
+#: handbook/views/admin/topic.py:38 handbook/views/admin/topic.py:62
+#: handbook/views/index.py:89
+msgid "Form invalid!!!"
+msgstr "Formulário inválido!!!"
+
+#: handbook/views/admin/item.py:75
+msgid "Item no exists!!!"
+msgstr "Item não existe!!!"
+
+#: handbook/views/admin/item.py:83
+msgid "Item edit success!!!"
+msgstr "Item editado com sucesso!!!"
+
+#: handbook/views/admin/item.py:87
+msgid "Fail edit item!!!"
+msgstr "Falha ao editar item!!!"
+
+#: handbook/views/admin/item.py:116
+msgid "Success Clean Topics Of Itens"
+msgstr "Sucesso ao limpar os itens dos tópicos."
+
+#: handbook/views/admin/item.py:119
+msgid "Error Clean Topics Of Itens"
+msgstr "Falha ao limpar os itens dos tópicos."
+
+#: handbook/views/admin/item.py:130
+msgid "Fail"
+msgstr "Falha"
+
+#: handbook/views/admin/item.py:137
+msgid "Get Topic Fail"
+msgstr "Pegar tópico falhou"
+
+#: handbook/views/admin/item.py:145
+msgid "Update Item Sucess"
+msgstr "Item atualizado com sucesso"
+
+#: handbook/views/admin/item.py:147
+msgid "Update Item Fail"
+msgstr "Falha ao atualizar item"
+
+#: handbook/views/admin/item.py:149 handbook/views/admin/topic.py:90
+msgid "Success"
+msgstr "Sucesso"
+
+#: handbook/views/admin/person.py:48
+msgid "Access Key no exists!!!"
+msgstr "Chave de acesso não existe!!!"
+
+#: handbook/views/admin/person.py:54
+msgid "Erro remove access key!!!"
+msgstr "Erro ao remover chave de acesso!!!"
+
+#: handbook/views/admin/person.py:61 handbook/views/admin/person.py:71
+msgid "Person no exists!!!"
+msgstr "Pessoa não existe!!!"
+
+#: handbook/views/admin/person.py:64
+msgid "User successfully removed!!!"
+msgstr "Usuário removido com sucesso!!!"
+
+#: handbook/views/admin/person.py:74
+msgid "User successfully restore!!!"
+msgstr "Usuário restaurado com sucesso!!!"
+
+#: handbook/views/admin/topic.py:34
+msgid "Topic add sucess!!!"
+msgstr "Tópico adicionado com sucesso!!!"
+
+#: handbook/views/admin/topic.py:36
+msgid "Fail add Topic!!!"
+msgstr "Falha ao adicionar tópico!!!"
+
+#: handbook/views/admin/topic.py:50
+msgid "(Topic No Exists!!!"
+msgstr "Tópico não existe!!!"
+
+#: handbook/views/admin/topic.py:57
+msgid "Topic edit sucess!!!"
+msgstr "Tópico editado com sucesso!!!"
+
+#: handbook/views/admin/topic.py:60
+msgid "Fail edit Topic!!!"
+msgstr "Falha ao editar tópico!!!"
+
+#: handbook/views/admin/topic.py:74
+msgid "Error remove topic!!!"
+msgstr "Erro ao remover tópico!!!"
+
+#: handbook/views/index.py:38 handbook/views/index.py:56
+msgid "Topic Not Exists!!!"
+msgstr "Tópico não existe!!!"
+
+#: handbook/views/index.py:63
+msgid "item Not Exists!!!"
+msgstr "Item não existe!!!"
+
+#: handbook/views/index.py:79
+msgid "Manual do Bixo - Contact"
+msgstr ""
+
+#: handbook/views/index.py:85
+msgid "Suggestion send sucess!!!"
+msgstr "Sugestão enviada com sucesso!!!"
+
+#: handbook/views/index.py:87
+msgid "Fail send Suggestion!!!"
+msgstr "Falha ao enviar a sugestão!!! "
+
+#: handbook/views/search.py:39
+msgid "Results no Found!!!"
+msgstr "Resultados não encontrados!!!"

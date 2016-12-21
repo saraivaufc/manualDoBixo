@@ -1,0 +1,25 @@
+{% extends 'handbook/_base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Suggestions" %}{% endblock %}
+
+
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+		<div class="container-fluid">
+			<a class="btn bg-item" onClick="back('/handbook/admin/topic/');">
+				<span class="glyphicon glyphicon-circle-arrow-left"></span>
+				{% trans "Back" %}
+			</a>	
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container-fluid">
+			{% include "handbook/admin/suggestion/_render_suggestions.html" %}
+		</div>
+	</div>
+</div>	
+{% endblock %}

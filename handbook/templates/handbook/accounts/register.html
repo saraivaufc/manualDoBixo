@@ -1,0 +1,29 @@
+{% extends 'handbook/_base.html' %}
+
+{% load staticfiles %}
+{% load i18n %}
+
+{% block title %}{% trans "Register" %}{% endblock %}
+
+{% block breadcrumb  %}
+    {{ block.super  }}
+    <li><a href="{% url 'handbook:register' %}">{% trans "Register" %}</a></li>
+{% endblock  %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row centered-form"
+    >
+
+    <h3 class="text-center">{% trans "Register" %}</h3>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+    	<form role="form" action="{% url 'handbook:register' %}" method="post" enctype="multipart/form-data" role="form">
+		{% csrf_token %}
+			{%  include 'handbook/_fields.html' %}
+			<input type="submit" value="{% trans "Register" %}" class="btn btn-info btn-block">
+		</form>
+	</div>
+</div>
+
+{% endblock %}

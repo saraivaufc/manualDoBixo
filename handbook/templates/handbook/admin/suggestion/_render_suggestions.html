@@ -1,0 +1,25 @@
+{% load i18n %}
+
+<div class="row">
+	<h3 class="text-center bg-text">{% trans "Suggestions" %}</h3>
+</div>
+
+<ul class="list-group divider">
+	{% for i in suggestions %}
+		<li  id="{{ i.id }}" class="list-group-item pointer title-topic bg-topic topic">
+			<div class="row">
+				<div class="col-md-10">
+					{{ i.name }}&nbsp;&nbsp;< {{ i.email }} >
+				</div>
+				<div class="col-md-2">
+					<div class="text-right">
+						<span onClick="viewSuggestionAdmin({{ i.id }});" class=" glyphicon glyphicon-eye-open pointer"></span>&nbsp;
+						<span  onClick="remSuggestion({{ i.id }});" class="glyphicon glyphicon-remove-sign pointer"></span>
+					</div>
+				</div>
+			</div>
+		</li>
+	{% empty %}
+		<li  class="list-group-item  list-group-item-warning" class="list-group-item">{% trans "Without Suggestions" %}</li>
+	{% endfor %}
+</ul>

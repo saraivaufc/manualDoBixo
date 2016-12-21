@@ -1,0 +1,34 @@
+{% load i18n %}
+{% load handbook_tags %}
+
+{% for field in form.visible_fields %}
+	{% if field|is_checkbox %}
+		{% include 'handbook/fields/checkbox.html' %}
+	{% elif field|is_radio %}
+		{% include 'handbook/fields/radio.html' %}
+	{% elif field|is_select %}
+		{% include 'handbook/fields/select.html' %}
+	{% elif field|is_select_multiple %}
+		{% include 'handbook/fields/select_multiple.html' %}
+	{% elif field|is_file %}
+		{% include 'handbook/fields/file.html' %}
+    {% elif field|is_text  %}
+    	{% include 'handbook/fields/text.html' %}
+	{% elif field|is_textarea %}
+		{% include 'handbook/fields/textarea.html' %}
+	{% elif field|is_email %}
+		{% include 'handbook/fields/email.html' %}
+	{% elif field|is_number %}
+		{% include 'handbook/fields/number.html' %}
+	{% elif field|is_date %}
+		{% include 'handbook/fields/date.html' %}
+	{% elif field|is_datetime %}
+		{% include 'handbook/fields/datetime.html' %}
+	{% elif field|is_time %}
+		{% include 'handbook/fields/time.html' %}
+	{% elif field|is_password %}
+		{% include 'handbook/fields/password.html' %}
+    {% else %}
+    	{% include 'handbook/fields/field.html' %}
+	{% endif %}
+{% endfor %}

@@ -1,0 +1,57 @@
+{% extends 'handbook/_base.html' %}
+
+{% load staticfiles %}
+{% load i18n %}
+
+{% block breadcrumb  %}
+	{{ block.super  }}
+	<li><a href="{% url 'handbook:see_admins' %}">{% trans "Admins" %}</a></li>
+{% endblock  %}
+
+
+
+{% block content %}
+<a class="btn btn-primary" href="{% url 'handbook:see_access_keys'  %}">	
+	<i class="fa fa-key"></i>
+	{% trans "See Access Keys" %}
+</a>
+<a class="btn btn-warning" href="{% url 'handbook:see_admins_removed'  %}">	
+	<i class="fa fa-trash-o"></i>
+	{% trans "Trash" %}
+</a>
+
+<div class="table_responsive">
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>{% trans "Fisrt Name" %}</th>
+				<th>{% trans "Last Name" %}</th>
+				<th>{% trans "EMail" %}</th>
+				<th>{% trans "Date Joined" %}</th>
+				<th>{% trans "Options" %}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for admin in admins %}
+			<tr>
+				<td>{{ admin.get_first_name }}</td>
+				<td>{{ admin.get_last_name }}</td>
+				<td>{{ admin.get_email }}</td>
+				<td>{{ admin.get_date_joined }}</td>
+				<td>
+					{% if is_removed %}
+					<a href="{% url 'handbook:restore_admin' admin.id %}" class="btn btn-info">
+						<i class="fa fa-history"></i> {% trans "Restore" %}
+					</a>
+					{% else %}
+					<a href="{% url 'handbook:remove_admin' admin.id %}" class="btn btn-danger">
+						<i class="fa fa-remove"></i> {% trans "Remove" %}
+					</a>
+					{% endif %}
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock %}

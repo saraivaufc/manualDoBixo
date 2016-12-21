@@ -1,0 +1,30 @@
+{% extends 'handbook/content/see_topic.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{{ item.get_title }}{% endblock %}
+
+{% block breadcrumb  %}
+{{ block.super }}
+<li>{{ item.get_title|title }}</li>
+{% endblock  %}
+
+{% block styles %}
+<style type="text/css">	
+	.services-sidebar {
+		height: 100%;
+	}
+</style>
+{% endblock %}
+
+{% block content_right %}
+<div class="container-fluid">
+	<div class="row">
+		{% include 'handbook/content/_render_item.html' %}	
+	</div>
+</div>
+{% endblock %}
+
+{% block pagination %}
+{% endblock %}

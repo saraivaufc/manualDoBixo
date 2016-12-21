@@ -1,0 +1,48 @@
+{% extends 'handbook/admin/person/see_admins.html' %}
+{% load i18n %}
+
+{% block breadcrumb %}
+	{{ block.super }}
+	<li>{% trans "View Keys" %}</li>
+{% endblock %}
+
+
+
+{%  block content %}	
+<form action="{% url 'handbook:see_access_keys' %}" method="POST">
+	{% csrf_token %}
+	<button type="submit" class="btn btn-success">
+		<i class="fa fa-cogs"></i> {% trans "Generate Key" %}
+	</button>
+</form>
+
+{% if new_register_key %}
+	<h3>{%  trans "Created Key" %} : <span class="tag success">{{ new_register_key }}</span></h3>
+{% endif %}	
+
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>{% trans "Key" %}</th>
+			<th>{% trans "Creator" %}</th>
+			<th>{% trans "User" %}</th>
+			<th>{% trans "Options" %}</th>
+		</tr>
+	<thead>
+	<tbody>
+		{% for register_key in register_keys %}
+			<tr>
+				<td>{{ register_key.key }}</td>
+				<td>{{ register_key.get_creator }}</td>
+				<td>{{ register_key.get_person }}</td>
+				<td>
+					<a href="{% url 'handbook:remove_access_key' register_key.id %}" class="btn btn-danger">
+						<i class="fa fa-remove"></i> {% trans "Remove" %}
+					</a>
+				</td>
+			</tr>
+		{% empty %}
+		{% endfor %}
+	<tbody>
+</table>
+{% endblock %}

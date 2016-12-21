@@ -1,0 +1,19 @@
+{% load i18n %}
+{% load handbook_tags %}
+
+{% autoescape off %}
+
+	<h1>{% SETTINGS "SITE_NAME" %}</h1>
+	<h2>
+	{% with SITE_NAME|settings as site_name %}
+		{% blocktrans with site_name=site_name %}
+			You received this email because someone contacted.
+		{% endblocktrans %}
+	{% endwith %}
+	</h2>
+
+	<div>{% trans "Name" %}: {{ contact.get_name }}</div>
+	<div>{% trans "Email" %}: <a href="mailto:{{ contact.get_email }}">{{ contact.get_email }}</a></div>
+	<div>{% trans "Message" %}: {{ contact.get_message }}</div>
+
+{% endautoescape %}

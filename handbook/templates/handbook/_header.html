@@ -1,0 +1,184 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load handbook_tags %}
+
+<div class="header">
+	<div class="wrap">
+		<div class="logo" style="padding: 10px;">
+			<a href="{% url 'handbook:index' %}"><img src="{% static 'handbook/img/icons/logo.png' %}" title="logo" /></a>
+		</div>
+		<div class="clear"> </div>
+	</div>
+</div>
+
+<div class="wrap">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{% url 'handbook:index' %}">{% trans "Home" %}</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				{% if request.user.is_authenticated and request.user|is_organizer %}
+				<li {% if is_admins %}class="active"{% endif %}>
+					<a href="{% url 'handbook:see_admins' %}">{%  trans "Admins" %}</a></li>
+				<li>
+				{% endif %}
+				<li {% if is_about %}class="active"{% endif %}>
+					<a href="{% url 'handbook:about' %}">{% trans "About" %}</a>
+				</li>
+				<li {% if is_contact %}class="active"{% endif %}>
+					<a href="{% url 'handbook:contact' %}">{%  trans "Contact" %}</a></li>
+				<li>
+			</ul>
+			<form class="navbar-form navbar-left" action="{% url 'handbook:search' %}" role="search" method="POST">
+			{% csrf_token %}
+				<div class="form-group">
+					<div class="btn-group">
+						<input  id="search" name="search" type="text" class="form-control" placeholder="{%  trans "Search..." %}">
+						<span id="searchclear" class="glyphicon glyphicon-search"></span>
+					</div>
+				</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#" data-toggle="modal" data-target="#modal_mobile_version">{%  trans "Mobile" %}</a>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						{% trans "Plus" %}<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						{% if request.user.is_authenticated %}
+						<li><a href="{% url 'handbook:logout' %}">{% trans "Logout" %}</a></li>
+						{% else %}
+						<li><a href="{% url 'handbook:login' %}">{% trans "Enter" %}</a></li>
+						{% endif %}
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+</div>
+
+
+
+
+<!-- End-Header-->
+<div class="clear"> </div>
+
+
+<div id="modal_mobile_version" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">{% trans "Mobile Version" %}</h4>
+			</div>
+			<div class="modal-body">
+			{% trans "Android Version:" %}
+			<center>
+				<figure>
+					<a href="/static/handbook/img/code.png" class="boxer" title="QrCode" data-gallery="gallery">
+					    <img class="img-responsive" src="/static/handbook/img/code.png" alt="Android" />
+					</a>
+				    <figcaption><a href="http://goo.gl/wU6Cji" target="_black">http://goo.gl/wU6Cji</a></figcaption>
+				</figure>
+			</center>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+{% comment %}
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand navbar-icon">
+				<img class="icones featurette-image img-responsive" src="/static/handbook/img/icon.png"/>
+			</a>
+			<a class="navbar-brand" href="/handbook/">
+				{% trans "Freshman Handbook" %}
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<form class="navbar-form navbar-left" action="/handbook/search/" role="search" method="POST">
+			{% csrf_token %}
+				<div class="form-group">
+					<div class="btn-group">
+						<input  id="search" name="search" type="text" class="form-control" placeholder="{%  trans "Search..." %}">
+						<span id="searchclear" class="glyphicon glyphicon-remove-circle hidden"></span>
+					</div>
+					<button type="submit" class="btn btn-submit pull-right">
+						<span class=" glyphicon glyphicon-search"></span>
+					</button>
+				</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					{% if request.user.is_staff %}
+					<a id="home" href="/handbook/admin/topic" class="bg-item">{% trans "Home" %}</a>
+					{% else %}
+					<a id="home" href="/handbook/topic" class="bg-item">{% trans "Home" %}</a>
+					{% endif %}
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle bg-item" data-toggle="dropdown">{%  trans "Plus" %} <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a id="suggestions"  href="/handbook/suggestions/send/">
+									<span class="glyphicon glyphicon-envelope"></span>
+									{% trans "Suggestions" %}</a>
+							</li>
+							<li>
+								<a id="customize" href="/handbook/customize/app/">
+									<span class="glyphicon glyphicon-tint"></span>  {% trans "Customize"%}
+								</a>
+							</li>
+							<li>
+								<a id="about" href="/handbook/about/view/">
+									<span class="glyphicon glyphicon-exclamation-sign"></span>  {% trans "About" %}
+								</a>
+							</li>
+						</ul>
+				</li>
+
+				<li class="dropdown">
+					{% if request.user.is_authenticated %}
+					<a href="#" class="dropdown-toggle bg-item" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  {{ request.user.username }} <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="/handbook/user/logout/">
+									<span class="glyphicon glyphicon-log-out"></span>  {% trans "Logout" %}
+								</a>
+							</li>
+						</ul>
+					{% else %}
+						<a id="login" href="/handbook/user/login/">
+							<span class="glyphicon glyphicon-log-in"></span>  {% trans "Login" %}
+						</a>
+					{% endif %}
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+{% endcomment %}

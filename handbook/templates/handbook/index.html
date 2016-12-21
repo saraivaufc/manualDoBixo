@@ -1,0 +1,102 @@
+{% extends 'handbook/_base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+{% load humanize %}
+
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block content %}
+
+<div class="about">
+	{% block content_left %}
+	<div class="services-sidebar">
+		<h4>{% trans "Categories" %}</h4>
+		<ul>
+			<li>
+				<img src="{% static 'handbook/img/icons/pointer.png' %}" title="pointer" />
+				<a href="{% url 'handbook:index' %}">{% trans "All" %}</a>
+			</li>
+		{% for topic in topics %}
+			<li>
+				<img src="{% static 'handbook/img/icons/pointer.png' %}" title="pointer" />
+				<a href="{% url 'handbook:see_topic' topic_slug=topic.get_slug page=1 %}">{{ topic.get_title }}</a>
+			</li>
+		{% endfor %}
+		</ul><br>
+	</div>
+	{% endblock %}
+
+	{% block content_right %}
+	<div class="bloder-content">				
+		{% for item in items.object_list %}
+		<div class="bloger-grid bloger-item-list">
+			<div class="blog-img">
+				<a href="{{ item.get_image.url}} " class="boxer" title="{{ item.get_title }}" data-gallery="gallery">
+					<img src="{{ item.get_image.url }}"/>
+				</a>
+			</div>
+			<div class="bloger-content">
+				<h3 class="text-center">{{ item.get_title }}</h3>
+				<h5 class="text-center">{{ item.get_topic.get_title }}</h5>
+				{{ item.get_description|safe|linebreaks|truncatewords_html:50 }}
+				<ul>
+					<li>
+						<label>{{ item.get_creation|naturaltime }}</label>
+					</li>
+					<li>
+						<a href="{% url 'handbook:see_item'  topic_slug=item.get_topic.get_slug item_slug=item.get_slug %}">
+						<span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span> {% trans "Readmore" %}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"> </div>
+		{% empty %}
+		<div class="bloger-grid">
+			<h1 class="text-center">{% trans "No item found!!!" %}</h1>
+		</div>
+		<div class="clear"> </div>
+		{% endfor %}
+	{% endblock %}
+
+	{% block pagination %}
+	<div class="wrap">
+		<!-- DC Pagination:A3 Start -->
+		<ul class="dc_pagination dc_paginationA dc_paginationA03">
+			{% if items.has_previous %}
+				<li>
+					{% if topic %}
+						<a href="{% url 'handbook:see_topic' topic_slug=topic.get_slug page=items.previous_page_number %}" class="previous">{% trans "Previous" %}</a>
+					{% else %}
+						<a href="{% url 'handbook:index' page=items.previous_page_number %}" class="previous">{% trans "Previous" %}</a>
+					{% endif %}
+				</li>
+			{% endif %}
+			{% for page in pages.page_range %}
+				<li>
+					{% if topic %}
+						<a href="{% url 'handbook:see_topic' topic_slug=topic.get_slug page=page %}" class="{% if items.number == page %}current{% endif %}">{{ page }}</a>
+					{% else %}
+						<a href="{% url 'handbook:index' page=page %}" class="{% if items.number == page %}current{% endif %}">{{ page }}</a>
+					{% endif %}
+				</li>
+			{% endfor %}
+			{% if items.has_next %}
+				<li>
+					{% if topic %}
+						<a href="{% url 'handbook:see_topic' topic_slug=topic.get_slug page=items.next_page_number %}" class="next">{% trans "Next" %}</a>
+					{% else %}
+						<a href="{% url 'handbook:index' page=items.next_page_number %}" class="next">{% trans "Next" %}</a>
+					{% endif %}
+				</li>
+			{% endif %}
+		</ul>
+		<!-- DC Pagination:A3 End -->	
+		<div class="clear"> </div>
+	</div>
+	{% endblock %}
+
+</div>
+{% endblock %}
